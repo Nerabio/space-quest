@@ -1,9 +1,10 @@
 <header id='home' class="header">
   <div class="welcome">
     <div class="welcome-container">
-      <h3 class='heading'>space the quest!</h3>
+      <h3 class='heading' (click)="scrollTo(authForm)">space the quest!</h3>
       <p class='copy'>What if you could experience a trip to further planets out into the cosmos find out how below!.</p>
-      <div id='launch-btn' class="pill-btn" (click)="changeRocketStatus()">launch</div>
+<!--      <div id='launch-btn' class="pill-btn" (click)="changeRocketStatus()">launch</div>-->
+      <app-button (click)="scrollTo(authForm)">launch</app-button>
     </div>
   </div>
   <div @myAnimationTrigger class="star-ship star-ship-1"></div>
@@ -33,7 +34,7 @@
       <section class="section-content">
         <div class="row">
           <div class="row-item">
-            <div class="card">
+            <div #authForm class="card">
               <h3 class='mission-heading margin-bottom-l'>our mission</h3>
 
               <p class='mission-copy'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam suscipit deleniti similique vel accusantium delectus nostrum nemo blanditiis esse enim, eaque pariatur? Cupiditate dolore, beatae omnis eligendi repellendus porro sunt.</p>

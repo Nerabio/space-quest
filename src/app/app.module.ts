@@ -5,11 +5,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { StartPageComponent } from './components/start-page/start-page.component';
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
+import { ButtonComponent } from './shared/button/button.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    StartPageComponent
+    StartPageComponent,
+    ButtonComponent
   ],
   imports: [
     BrowserModule,

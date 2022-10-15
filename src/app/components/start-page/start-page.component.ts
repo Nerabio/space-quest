@@ -13,7 +13,7 @@ import { trigger, transition, state, keyframes, group, query, style, animate, an
             right: '-33%',
             bottom: '-66%'
           }),
-      animate(1000, style(
+      animate(1500, style(
         {
           right: '0',
           bottom: '0'
@@ -64,8 +64,8 @@ export class StartPageComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  changeRocketStatus(): void {
-    this.rocketAnimationStatus = (this.rocketAnimationStatus = 'start') ? 'stop' : 'start';
+  scrollTo(el: HTMLElement): void {
+    el?.scrollIntoView({behavior: 'smooth'});
   }
 
 }
